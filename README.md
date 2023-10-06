@@ -46,11 +46,11 @@ To create a new React project, follow these steps:
 2. Run the following command:
 
 
-	npx create-next-app	
+		npx create-next-app	
 
 
 
-3. Answer the following prompts:
+# 3. Answer the following prompts:
 
 - Project name: Enter your project name (e.g., `my-next-app`).
 - TypeScript: Choose "No" for no TypeScript setup.
@@ -64,29 +64,26 @@ To create a new React project, follow these steps:
 
 After creating your project, navigate to its directory and open it in your code editor:
 
+	bash
+	cd my-next-app
+	code
 
 
-bash
-cd my-next-app
-code
-
-
-.## 2. Project Setup
+# 2. Project Setup
 
 After creating your project, navigate to its directory and open it in your code editor:
 
-bash
-cd my-next-app
-code .
+	bash
+	cd my-next-app
+	code .
 
 
-3. Start Development Server
+# 3. Start Development Server
 To start your development server, run:
-npm run dev
+	
+	npm run dev
 
-
-
-4. Creating React Components
+@4. Creating React Components
 Shortcut: rafc for React Arrow Function Component
 
 You can create a React functional component using the rafc shortcut:
@@ -108,7 +105,7 @@ You can create a React functional component using the rafc shortcut:
 		};
 		export default MyComponent;
 
-5. JSX
+#5. JSX
 In React, you can write JSX (JavaScript XML) to describe your UI elements. JSX allows you to embed HTML-like code within JavaScript.
 	
 		const element = (
@@ -119,8 +116,8 @@ In React, you can write JSX (JavaScript XML) to describe your UI elements. JSX a
 		);
 
 
-6. Using className
-Instead of using the class attribute, you should use className in React to set CSS classes:
+#6. Using className
+I nstead of using the class attribute, you should use className in React to set CSS classes:
 
 
 			const MyComponent = () => {
@@ -132,32 +129,30 @@ Instead of using the class attribute, you should use className in React to set C
 			};
 
 
-6. Using className
+# 6. Using className
 Instead of using the class attribute, you should use className in React to set CSS classes:
 
 
-7. Defining Variables in React
+# 7. Defining Variables in React
 Use the useState hook to define and manage variables in React. Remember to import it:
 
-import React, { useState } from 'react';
-
-const MyComponent = () => {
-  const [variableName, setVariableName] = useState(initialValue);
-
-  return (
-    // JSX code using variableName
-  );
-};
+			import React, { useState } from 'react';
+			const MyComponent = () => {
+			  const [variableName, setVariableName] = useState(initialValue);
+			  return (
+			    // JSX code using variableName
+			  );
+			};
 
 
 
-8. Organizing Components
+# 8. Organizing Components
 Create a folder named Components within your project directory. Inside this folder, you can create individual component files. For example:
 
-my-next-app
-│
-├── Components
-│   └── Header.js
+		my-next-app
+		│
+		├── Components
+		│   └── Header.js
 
 
 
@@ -168,13 +163,12 @@ import Header from '@/Components/Header';
 // Use the Header component in your code
 
 
-9. Using Props
+# 9. Using Props
 Props allow you to pass data from parent components to child components. Here's an example of passing props:
 
-
 // In the parent component (e.g., page.js)
-const [userName, setUserName] = useState("John Dev");
 
+	const [userName, setUserName] = useState("John Dev");
 		<Header name={userName} />
 		// In the Header component
 		const Header = (props) => {
@@ -186,22 +180,21 @@ const [userName, setUserName] = useState("John Dev");
 		};
 
 
-10. Routing with Next.js
+# 10. Routing with Next.js
 To create links and handle routing in your application, use the Link component from Next.js:
 
 
 
-import Link from 'next/link';
-
+		import Link from 'next/link';
 		<Link href="/about">About</Link>
 		<Link href="/contact">Contact</Link>
 
 
 
-11. Layout Component
+# 11. Layout Component
 You can create a layout component to provide a consistent structure for your pages. Pass data and components as props to the layout component for a unified look and feel.
 
-12. API Calling in React
+# 12. API Calling in React
 To make API requests in React, you can use libraries like Axios. First, install Axios:
 
 
