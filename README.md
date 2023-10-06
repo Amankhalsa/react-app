@@ -40,7 +40,7 @@ This documentation provides a step-by-step guide to setting up a React project u
 
 ## 1. Installation
 
-To create a new React project, follow these steps:
+ To create a new React project, follow these steps:
 
 1. Open your terminal.
 2. Run the following command:
